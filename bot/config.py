@@ -1,8 +1,8 @@
 from configparser import ConfigParser
 
-def config(filename='settings.ini', section='postgresql'):
+def config(filename, section):
     parser=ConfigParser()
-    parser.read(filename)
+    parser.read(filename,"utf_8_sig")
 
     db = {}
     if parser.has_section(section):

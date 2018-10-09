@@ -10,11 +10,13 @@ def main():
     pool = Pool()
     pool.apply_async(notificate)
     pool.apply_async(answer)
+    #answer()
+    #notificate()
     
 def notificate():
     while True:
         bot.send_notifications()
-        time.sleep(0.5)
+        time.sleep(5)
 
 def answer():
     last_update_id = None

@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>505b0aab-3ec0-4df1-be5f-1fea7e7e42f3</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>GoogleSheets.py</StartupFile>
+    <StartupFile>bot.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,21 +26,33 @@
     <Compile Include="BotHandler.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Actions.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="config.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="dbpostgres.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="GoogleSheets.py">
+    <Compile Include="LogDBHandler.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="LogDBHandler.py">
+    <Compile Include="NotificationSheet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NotificationTable.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Twilio.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="settings.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="logging\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
